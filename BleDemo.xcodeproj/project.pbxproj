@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EB075C9ABCAF5011DD88272 /* Pods_BleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05366DCD76F7E7E36029EB2E /* Pods_BleDemoTests.framework */; };
+		EAEC87D43E163EFF4886A66C /* Pods_BleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461DB34EAAB44EA99FEEC88 /* Pods_BleDemo.framework */; };
+		FA09FC2B1E30A14E0009F0C6 /* BugfenderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09FC2A1E30A14E0009F0C6 /* BugfenderSwift.swift */; };
+		FA09FC5F1E30B3230009F0C6 /* SettingsManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09FC5E1E30B3230009F0C6 /* SettingsManage.m */; };
+		FA2429FB1DB8F63500AA158F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2429FA1DB8F63500AA158F /* AppDelegate.swift */; };
+		FA2429FD1DB8F63500AA158F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2429FC1DB8F63500AA158F /* SettingsViewController.swift */; };
+		FA242A021DB8F63600AA158F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA242A011DB8F63600AA158F /* Assets.xcassets */; };
+		FA242A051DB8F63600AA158F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA242A031DB8F63600AA158F /* LaunchScreen.storyboard */; };
+		FA242A101DB8F63600AA158F /* BleDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA242A0F1DB8F63600AA158F /* BleDemoTests.swift */; };
+		FA352F5D1DCED25B009E1F73 /* QorumLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA352F5C1DCED25B009E1F73 /* QorumLogs.swift */; };
+		FA5339AC1DB9FA0C002767AE /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5339AB1DB9FA0C002767AE /* BeaconInfo.swift */; };
+		FA5339AE1DBA0168002767AE /* ApiManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5339AD1DBA0168002767AE /* ApiManage.swift */; };
+		FA5339B01DBA157A002767AE /* BeaconRegionManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5339AF1DBA157A002767AE /* BeaconRegionManage.swift */; };
+		FA5339B21DBA1A58002767AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5339B11DBA1A58002767AE /* CoreLocation.framework */; };
+		FA5339B41DBA56FE002767AE /* PairedMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5339B31DBA56FE002767AE /* PairedMode.swift */; };
+		FA5339B61DBA70E8002767AE /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5339B51DBA70E8002767AE /* CoreBluetooth.framework */; };
+		FA6481C61DD828EB00FD3F0C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6481B11DD828B800FD3F0C /* NotificationCenter.framework */; };
+		FA6481C91DD828EB00FD3F0C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6481C81DD828EB00FD3F0C /* TodayViewController.swift */; };
+		FA6481CC1DD828EB00FD3F0C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6481CA1DD828EB00FD3F0C /* MainInterface.storyboard */; };
+		FA6481D01DD828EB00FD3F0C /* BleStatusTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA6481C51DD828EB00FD3F0C /* BleStatusTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA6481D51DD852AF00FD3F0C /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5339AB1DB9FA0C002767AE /* BeaconInfo.swift */; };
+		FA979D7C1DD2F70E00DD8735 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA979D7B1DD2F70E00DD8735 /* MainViewController.swift */; };
+		FA979D7F1DD2FB8C00DD8735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA979D7D1DD2FB8C00DD8735 /* Main.storyboard */; };
+		FACA4BDB1E2C028000881081 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACA4BDA1E2C028000881081 /* CoreMotion.framework */; };
+		FAEC55BF1DD51FE1007C2CE0 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55B51DD51FE1007C2CE0 /* DPDConstants.swift */; };
+		FAEC55C01DD51FE1007C2CE0 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55B61DD51FE1007C2CE0 /* DPDKeyboardListener.swift */; };
+		FAEC55C11DD51FE1007C2CE0 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55B71DD51FE1007C2CE0 /* DPDUIView+Extension.swift */; };
+		FAEC55C31DD51FE1007C2CE0 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEC55BA1DD51FE1007C2CE0 /* DropDownCell.xib */; };
+		FAEC55C41DD51FE1007C2CE0 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55BC1DD51FE1007C2CE0 /* DropDown+Appearance.swift */; };
+		FAEC55C51DD51FE1007C2CE0 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55BD1DD51FE1007C2CE0 /* DropDown.swift */; };
+		FAEC55C61DD51FE1007C2CE0 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC55BE1DD51FE1007C2CE0 /* DropDownCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA242A0C1DB8F63600AA158F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2429EF1DB8F63300AA158F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA2429F61DB8F63400AA158F;
+			remoteInfo = BleDemo;
+		};
+		FA6481CE1DD828EB00FD3F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2429EF1DB8F63300AA158F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6481C41DD828EB00FD3F0C;
+			remoteInfo = BleStatusTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA6481C01DD828B800FD3F0C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA6481D01DD828EB00FD3F0C /* BleStatusTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05366DCD76F7E7E36029EB2E /* Pods_BleDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BleDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D12A8EA3CE31A556F57683 /* Pods-BleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BleDemo/Pods-BleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5461DB34EAAB44EA99FEEC88 /* Pods_BleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C1B19C4923B0958F80F8CF /* Pods-BleDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BleDemoTests/Pods-BleDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		84B5A02FFE80C76EE401A74D /* Pods-BleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BleDemo/Pods-BleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		995291E3E746B8BB56B5F2FD /* Pods-BleDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BleDemoTests/Pods-BleDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA09FC2A1E30A14E0009F0C6 /* BugfenderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugfenderSwift.swift; sourceTree = "<group>"; };
+		FA09FC5D1E30B3230009F0C6 /* SettingsManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManage.h; sourceTree = "<group>"; };
+		FA09FC5E1E30B3230009F0C6 /* SettingsManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManage.m; sourceTree = "<group>"; };
+		FA2429F71DB8F63400AA158F /* BleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2429FA1DB8F63500AA158F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA2429FC1DB8F63500AA158F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FA242A011DB8F63600AA158F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA242A041DB8F63600AA158F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA242A061DB8F63600AA158F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA242A0B1DB8F63600AA158F /* BleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA242A0F1DB8F63600AA158F /* BleDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDemoTests.swift; sourceTree = "<group>"; };
+		FA242A111DB8F63600AA158F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA298F3F1DBE0C3A00DF8CF1 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		FA298F401DBE0C3A00DF8CF1 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		FA352F5C1DCED25B009E1F73 /* QorumLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QorumLogs.swift; sourceTree = "<group>"; };
+		FA5339AB1DB9FA0C002767AE /* BeaconInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
+		FA5339AD1DBA0168002767AE /* ApiManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManage.swift; sourceTree = "<group>"; };
+		FA5339AF1DBA157A002767AE /* BeaconRegionManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRegionManage.swift; sourceTree = "<group>"; };
+		FA5339B11DBA1A58002767AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA5339B31DBA56FE002767AE /* PairedMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairedMode.swift; sourceTree = "<group>"; };
+		FA5339B51DBA70E8002767AE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FA6481B11DD828B800FD3F0C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FA6481C51DD828EB00FD3F0C /* BleStatusTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BleStatusTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6481C81DD828EB00FD3F0C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FA6481CB1DD828EB00FD3F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FA6481CD1DD828EB00FD3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6481D41DD84E7400FD3F0C /* BleDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BleDemo.entitlements; sourceTree = "<group>"; };
+		FA979D7B1DD2F70E00DD8735 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA979D7E1DD2FB8C00DD8735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACA4BD91E2BF37C00881081 /* BleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		FACA4BDA1E2C028000881081 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FAEC55B31DD51FE1007C2CE0 /* DropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDown.h; sourceTree = "<group>"; };
+		FAEC55B51DD51FE1007C2CE0 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		FAEC55B61DD51FE1007C2CE0 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		FAEC55B71DD51FE1007C2CE0 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		FAEC55BA1DD51FE1007C2CE0 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		FAEC55BC1DD51FE1007C2CE0 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		FAEC55BD1DD51FE1007C2CE0 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		FAEC55BE1DD51FE1007C2CE0 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		FAFA57651DD98F060055CB4C /* BleStatusTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BleStatusTodayExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2429F41DB8F63400AA158F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACA4BDB1E2C028000881081 /* CoreMotion.framework in Frameworks */,
+				FA5339B61DBA70E8002767AE /* CoreBluetooth.framework in Frameworks */,
+				FA5339B21DBA1A58002767AE /* CoreLocation.framework in Frameworks */,
+				EAEC87D43E163EFF4886A66C /* Pods_BleDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA242A081DB8F63600AA158F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB075C9ABCAF5011DD88272 /* Pods_BleDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6481C21DD828EB00FD3F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6481C61DD828EB00FD3F0C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28E041B73D3ED9155AF64BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84B5A02FFE80C76EE401A74D /* Pods-BleDemo.debug.xcconfig */,
+				45D12A8EA3CE31A556F57683 /* Pods-BleDemo.release.xcconfig */,
+				995291E3E746B8BB56B5F2FD /* Pods-BleDemoTests.debug.xcconfig */,
+				80C1B19C4923B0958F80F8CF /* Pods-BleDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B3F6C905D3861F115A14EE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FACA4BDA1E2C028000881081 /* CoreMotion.framework */,
+				FA298F3F1DBE0C3A00DF8CF1 /* UserNotifications.framework */,
+				FA298F401DBE0C3A00DF8CF1 /* UserNotificationsUI.framework */,
+				FA5339B51DBA70E8002767AE /* CoreBluetooth.framework */,
+				FA5339B11DBA1A58002767AE /* CoreLocation.framework */,
+				5461DB34EAAB44EA99FEEC88 /* Pods_BleDemo.framework */,
+				05366DCD76F7E7E36029EB2E /* Pods_BleDemoTests.framework */,
+				FA6481B11DD828B800FD3F0C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2429EE1DB8F63200AA158F = {
+			isa = PBXGroup;
+			children = (
+				FACA4BD91E2BF37C00881081 /* BleDemo-Bridging-Header.h */,
+				FAEC55B21DD51FE1007C2CE0 /* DropDown */,
+				FA2429F91DB8F63500AA158F /* BleDemo */,
+				FA242A0E1DB8F63600AA158F /* BleDemoTests */,
+				FA6481C71DD828EB00FD3F0C /* BleStatusTodayExtension */,
+				FA2429F81DB8F63400AA158F /* Products */,
+				28E041B73D3ED9155AF64BE0 /* Pods */,
+				6B3F6C905D3861F115A14EE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2429F81DB8F63400AA158F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2429F71DB8F63400AA158F /* BleDemo.app */,
+				FA242A0B1DB8F63600AA158F /* BleDemoTests.xctest */,
+				FA6481C51DD828EB00FD3F0C /* BleStatusTodayExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2429F91DB8F63500AA158F /* BleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA6481D41DD84E7400FD3F0C /* BleDemo.entitlements */,
+				FA2429FA1DB8F63500AA158F /* AppDelegate.swift */,
+				FA979D7B1DD2F70E00DD8735 /* MainViewController.swift */,
+				FA2429FC1DB8F63500AA158F /* SettingsViewController.swift */,
+				FA5339AD1DBA0168002767AE /* ApiManage.swift */,
+				FA5339AF1DBA157A002767AE /* BeaconRegionManage.swift */,
+				FA5339AB1DB9FA0C002767AE /* BeaconInfo.swift */,
+				FA5339B31DBA56FE002767AE /* PairedMode.swift */,
+				FA352F5C1DCED25B009E1F73 /* QorumLogs.swift */,
+				FA09FC2A1E30A14E0009F0C6 /* BugfenderSwift.swift */,
+				FA242A011DB8F63600AA158F /* Assets.xcassets */,
+				FA242A031DB8F63600AA158F /* LaunchScreen.storyboard */,
+				FA979D7D1DD2FB8C00DD8735 /* Main.storyboard */,
+				FA242A061DB8F63600AA158F /* Info.plist */,
+				FA09FC5D1E30B3230009F0C6 /* SettingsManage.h */,
+				FA09FC5E1E30B3230009F0C6 /* SettingsManage.m */,
+			);
+			path = BleDemo;
+			sourceTree = "<group>";
+		};
+		FA242A0E1DB8F63600AA158F /* BleDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA242A0F1DB8F63600AA158F /* BleDemoTests.swift */,
+				FA242A111DB8F63600AA158F /* Info.plist */,
+			);
+			path = BleDemoTests;
+			sourceTree = "<group>";
+		};
+		FA6481C71DD828EB00FD3F0C /* BleStatusTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA57651DD98F060055CB4C /* BleStatusTodayExtension.entitlements */,
+				FA6481C81DD828EB00FD3F0C /* TodayViewController.swift */,
+				FA6481CA1DD828EB00FD3F0C /* MainInterface.storyboard */,
+				FA6481CD1DD828EB00FD3F0C /* Info.plist */,
+			);
+			path = BleStatusTodayExtension;
+			sourceTree = "<group>";
+		};
+		FAEC55B21DD51FE1007C2CE0 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				FAEC55B31DD51FE1007C2CE0 /* DropDown.h */,
+				FAEC55B41DD51FE1007C2CE0 /* helpers */,
+				FAEC55B91DD51FE1007C2CE0 /* resources */,
+				FAEC55BB1DD51FE1007C2CE0 /* src */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		FAEC55B41DD51FE1007C2CE0 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAEC55B51DD51FE1007C2CE0 /* DPDConstants.swift */,
+				FAEC55B61DD51FE1007C2CE0 /* DPDKeyboardListener.swift */,
+				FAEC55B71DD51FE1007C2CE0 /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		FAEC55B91DD51FE1007C2CE0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAEC55BA1DD51FE1007C2CE0 /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FAEC55BB1DD51FE1007C2CE0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FAEC55BC1DD51FE1007C2CE0 /* DropDown+Appearance.swift */,
+				FAEC55BD1DD51FE1007C2CE0 /* DropDown.swift */,
+				FAEC55BE1DD51FE1007C2CE0 /* DropDownCell.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2429F61DB8F63400AA158F /* BleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA242A141DB8F63700AA158F /* Build configuration list for PBXNativeTarget "BleDemo" */;
+			buildPhases = (
+				40FDD4D69187485802E906E3 /* [CP] Check Pods Manifest.lock */,
+				FA2429F31DB8F63400AA158F /* Sources */,
+				FA2429F41DB8F63400AA158F /* Frameworks */,
+				FA2429F51DB8F63400AA158F /* Resources */,
+				930F07F4F272F90D19C9E257 /* [CP] Embed Pods Frameworks */,
+				4C7042068D6F4F80BDEE9825 /* [CP] Copy Pods Resources */,
+				FA4740D71DC1E339006FC254 /* ShellScript */,
+				FA6481C01DD828B800FD3F0C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA6481CF1DD828EB00FD3F0C /* PBXTargetDependency */,
+			);
+			name = BleDemo;
+			productName = BleDemo;
+			productReference = FA2429F71DB8F63400AA158F /* BleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA242A0A1DB8F63600AA158F /* BleDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA242A171DB8F63700AA158F /* Build configuration list for PBXNativeTarget "BleDemoTests" */;
+			buildPhases = (
+				A36AA93414840221A9559052 /* [CP] Check Pods Manifest.lock */,
+				FA242A071DB8F63600AA158F /* Sources */,
+				FA242A081DB8F63600AA158F /* Frameworks */,
+				FA242A091DB8F63600AA158F /* Resources */,
+				248A53C57C28D70F3E87C3BC /* [CP] Embed Pods Frameworks */,
+				5BD7CAE0475D96E594239602 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA242A0D1DB8F63600AA158F /* PBXTargetDependency */,
+			);
+			name = BleDemoTests;
+			productName = BleDemoTests;
+			productReference = FA242A0B1DB8F63600AA158F /* BleDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA6481C41DD828EB00FD3F0C /* BleStatusTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6481D11DD828EB00FD3F0C /* Build configuration list for PBXNativeTarget "BleStatusTodayExtension" */;
+			buildPhases = (
+				FA6481C11DD828EB00FD3F0C /* Sources */,
+				FA6481C21DD828EB00FD3F0C /* Frameworks */,
+				FA6481C31DD828EB00FD3F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BleStatusTodayExtension;
+			productName = BleStatusTodayExtension;
+			productReference = FA6481C51DD828EB00FD3F0C /* BleStatusTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2429EF1DB8F63300AA158F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FA2429F61DB8F63400AA158F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+					FA242A0A1DB8F63600AA158F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA2429F61DB8F63400AA158F;
+					};
+					FA6481C41DD828EB00FD3F0C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FA2429F21DB8F63300AA158F /* Build configuration list for PBXProject "BleDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA2429EE1DB8F63200AA158F;
+			productRefGroup = FA2429F81DB8F63400AA158F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2429F61DB8F63400AA158F /* BleDemo */,
+				FA242A0A1DB8F63600AA158F /* BleDemoTests */,
+				FA6481C41DD828EB00FD3F0C /* BleStatusTodayExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2429F51DB8F63400AA158F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA979D7F1DD2FB8C00DD8735 /* Main.storyboard in Resources */,
+				FA242A051DB8F63600AA158F /* LaunchScreen.storyboard in Resources */,
+				FAEC55C31DD51FE1007C2CE0 /* DropDownCell.xib in Resources */,
+				FA242A021DB8F63600AA158F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA242A091DB8F63600AA158F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6481C31DD828EB00FD3F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6481CC1DD828EB00FD3F0C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		248A53C57C28D70F3E87C3BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BleDemoTests/Pods-BleDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40FDD4D69187485802E906E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C7042068D6F4F80BDEE9825 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BleDemo/Pods-BleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD7CAE0475D96E594239602 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BleDemoTests/Pods-BleDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		930F07F4F272F90D19C9E257 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BleDemo/Pods-BleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36AA93414840221A9559052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4740D71DC1E339006FC254 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 391031a1a05b15c44b3943bd53db5391105e3ba3 32a3afc5d94906298bab97064fdf7041b483eea6b8305908b59e56819e2dffe0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2429F31DB8F63400AA158F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2429FD1DB8F63500AA158F /* SettingsViewController.swift in Sources */,
+				FA352F5D1DCED25B009E1F73 /* QorumLogs.swift in Sources */,
+				FA5339AE1DBA0168002767AE /* ApiManage.swift in Sources */,
+				FAEC55C01DD51FE1007C2CE0 /* DPDKeyboardListener.swift in Sources */,
+				FAEC55C11DD51FE1007C2CE0 /* DPDUIView+Extension.swift in Sources */,
+				FA09FC5F1E30B3230009F0C6 /* SettingsManage.m in Sources */,
+				FA5339B01DBA157A002767AE /* BeaconRegionManage.swift in Sources */,
+				FA5339B41DBA56FE002767AE /* PairedMode.swift in Sources */,
+				FAEC55C51DD51FE1007C2CE0 /* DropDown.swift in Sources */,
+				FA2429FB1DB8F63500AA158F /* AppDelegate.swift in Sources */,
+				FAEC55C41DD51FE1007C2CE0 /* DropDown+Appearance.swift in Sources */,
+				FAEC55C61DD51FE1007C2CE0 /* DropDownCell.swift in Sources */,
+				FAEC55BF1DD51FE1007C2CE0 /* DPDConstants.swift in Sources */,
+				FA5339AC1DB9FA0C002767AE /* BeaconInfo.swift in Sources */,
+				FA979D7C1DD2F70E00DD8735 /* MainViewController.swift in Sources */,
+				FA09FC2B1E30A14E0009F0C6 /* BugfenderSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA242A071DB8F63600AA158F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA242A101DB8F63600AA158F /* BleDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6481C11DD828EB00FD3F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6481D51DD852AF00FD3F0C /* BeaconInfo.swift in Sources */,
+				FA6481C91DD828EB00FD3F0C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA242A0D1DB8F63600AA158F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA2429F61DB8F63400AA158F /* BleDemo */;
+			targetProxy = FA242A0C1DB8F63600AA158F /* PBXContainerItemProxy */;
+		};
+		FA6481CF1DD828EB00FD3F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6481C41DD828EB00FD3F0C /* BleStatusTodayExtension */;
+			targetProxy = FA6481CE1DD828EB00FD3F0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA242A031DB8F63600AA158F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA242A041DB8F63600AA158F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA6481CA1DD828EB00FD3F0C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6481CB1DD828EB00FD3F0C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		FA979D7D1DD2FB8C00DD8735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA979D7E1DD2FB8C00DD8735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA242A121DB8F63600AA158F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA242A131DB8F63700AA158F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA242A151DB8F63700AA158F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B5A02FFE80C76EE401A74D /* Pods-BleDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BleDemo/BleDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.kaushik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5fd0e3b7-388d-4261-b1b1-30f6be6536b4";
+				PROVISIONING_PROFILE_SPECIFIER = "BLEV3-Alex";
+				SWIFT_OBJC_BRIDGING_HEADER = "BleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA242A161DB8F63700AA158F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D12A8EA3CE31A556F57683 /* Pods-BleDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BleDemo/BleDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.kaushik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5fd0e3b7-388d-4261-b1b1-30f6be6536b4";
+				PROVISIONING_PROFILE_SPECIFIER = "BLEV3-Alex";
+				SWIFT_OBJC_BRIDGING_HEADER = "BleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA242A181DB8F63700AA158F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995291E3E746B8BB56B5F2FD /* Pods-BleDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.BleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleDemo.app/BleDemo";
+			};
+			name = Debug;
+		};
+		FA242A191DB8F63700AA158F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C1B19C4923B0958F80F8CF /* Pods-BleDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.BleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleDemo.app/BleDemo";
+			};
+			name = Release;
+		};
+		FA6481D21DD828EB00FD3F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BleStatusTodayExtension/BleStatusTodayExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BleStatusTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.kaushik.BleStatusTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8c558522-ef02-4b6c-975a-97bc5f9c6b2c";
+				PROVISIONING_PROFILE_SPECIFIER = "BLEv3-Alex-Extension";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA6481D31DD828EB00FD3F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BleStatusTodayExtension/BleStatusTodayExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shashanka Ashili (538YY56XNY)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BleStatusTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.kaushik.BleStatusTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8c558522-ef02-4b6c-975a-97bc5f9c6b2c";
+				PROVISIONING_PROFILE_SPECIFIER = "BLEv3-Alex-Extension";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2429F21DB8F63300AA158F /* Build configuration list for PBXProject "BleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA242A121DB8F63600AA158F /* Debug */,
+				FA242A131DB8F63700AA158F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA242A141DB8F63700AA158F /* Build configuration list for PBXNativeTarget "BleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA242A151DB8F63700AA158F /* Debug */,
+				FA242A161DB8F63700AA158F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA242A171DB8F63700AA158F /* Build configuration list for PBXNativeTarget "BleDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA242A181DB8F63700AA158F /* Debug */,
+				FA242A191DB8F63700AA158F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6481D11DD828EB00FD3F0C /* Build configuration list for PBXNativeTarget "BleStatusTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6481D21DD828EB00FD3F0C /* Debug */,
+				FA6481D31DD828EB00FD3F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2429EF1DB8F63300AA158F /* Project object */;
+}

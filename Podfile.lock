@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.0.1)
+  - BugfenderSDK (0.3.24)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.10)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - BugfenderSDK (~> 0.3)
+  - Crashlytics
+  - Fabric
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  BugfenderSDK: d460a9ee3ba398d63e2a0549c62fe4d77f4082a8
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Fabric: c73f371ee543e3f0b80608f2674750e4910d1669
+
+PODFILE CHECKSUM: a8a9405135748a2bcbdfe91aa79cfa2a64b2e1c2
+
+COCOAPODS: 1.1.1
